@@ -315,3 +315,35 @@ h2 {
 .dark-mode .nav a:hover {
   color: #3498db;
 }
+
+
+.metric_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* 添加下边缘间距 */
+}
+
+.metric_label {
+  margin-right: 10px;
+  font-size: 16px;
+  writing-mode: vertical-lr; /* 垂直书写模式，文字从右往左 */
+  text-orientation: mixed; /* 使文字直立显示 */
+}
+
+.metric_image-gallery {
+    display: flex;
+    gap: 10px; /* 间距 */
+}
+
+.metric_image-gallery img {
+    width: 120px; /* 图片宽度 */
+    height: auto;
+    border: 1px solid #ddd; /* 边框 */
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.metric_image-gallery img:hover {
+    transform: scale(1.1); /* 鼠标悬浮时放大 */
+    border-color: #333;
+}
