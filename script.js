@@ -144,8 +144,12 @@ function copyBibTeX() {
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    const imageCarousel = new Carousel(
-      document.querySelector("#imageCarousel"),
+    const rgb_display = new Carousel(
+      document.querySelector("#rgb_display"),
+      3000
+    );
+    const depth_display = new Carousel(
+      document.querySelector("#depth_display"),
       3000
     );
     const videoCarousel = new Carousel(
@@ -154,7 +158,7 @@ function copyBibTeX() {
     );
 
     // Add touch support
-    const carousels = [imageCarousel, videoCarousel];
+    const carousels = [rgb_display, depth_display, videoCarousel];
     carousels.forEach((carousel) => {
       let touchStartX = 0;
       let touchEndX = 0;
