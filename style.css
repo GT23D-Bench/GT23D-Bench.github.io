@@ -17,6 +17,11 @@ body {
   padding-left: 8px;
   padding-right: 4px;
 }
+h2 {
+    font-size: 29px; /* 调大字体大小，可以根据需要调整 */
+    text-align: center; /* 确保文字居中 */
+    margin-top: 50px; /* 添加上方的间距，可以根据需要调整 */
+}
 p {
   margin: 4px 0;
 }
